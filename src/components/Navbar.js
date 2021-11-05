@@ -7,8 +7,6 @@ import './Navbar.css'
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(false);
-
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -36,17 +34,13 @@ function Navbar() {
                     <Link to='/about-me'>ABOUT ME</Link>
                 </li>
                 <li className="nav-btn">
-                    {button ? (
-                        <Link to='/sign-up' className="btn-link">
-                            <Button buttonStyle='btn--outline'>SIGN IN</Button>
-                        </Link>
-                    ) : (
+                    {
                         <Link to='/sign-up' className="btn-link">
                             <Button buttonStyle="btn--primary"
                                     buttonSize='btn--mobile'
                             >SIGN IN</Button>
                         </Link>
-                    )}
+                    }
                 </li>
             </ul>
           </div>
