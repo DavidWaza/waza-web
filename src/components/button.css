@@ -110,3 +110,10 @@
   .green:hover {
     background-color: #242424;
   }
+
+  @media screen and (max-width: 960px) {
+
+  .btn-link {
+    margin-bottom: 150px;
+  }
+  }
