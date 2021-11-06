@@ -1,6 +1,15 @@
 .home__hero-section {
     color:#fff;
     padding:160px 0;
+    visibility:hidden;
+}
+.home__hero-section .slide{
+    animation: slide 1s;
+}
+.home__hero-section:after {
+    content: "";
+    display:table;
+    clear:both;
 }
 .home__hero-row {
     align-items:center;
@@ -84,4 +93,12 @@ img{
          flex-basis: 100%;
      }
      
+}
+@keyframes slide {
+    0%{
+        transform: translateY(50%)
+    }
+    100% {
+        transform: translateY(0)
+    }
 }
