@@ -47,7 +47,7 @@
     text-decoration: none;
     list-style: none;
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end;
   }
   a{
       color:#fff;

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Button } from "./button";
 import { IconContext } from "react-icons/lib";
 import "./Navbar.css";
+import AboutUs from "./pages/AboutUs";
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -26,10 +28,10 @@ function Navbar() {
                 <Link to="/">HOME</Link>
               </li>
               <li className="nav-item">
-                <Link to="/services"> SERVICES</Link>
+                <Link to="/Services"> SERVICES</Link>
               </li>
               <li className="nav-item">
-                <Link to="/about-me">ABOUT US</Link>
+                <Link to="/AboutUs">ABOUT US</Link>
               </li>
               <li className="nav-btn">
                 {
@@ -44,6 +46,13 @@ function Navbar() {
           </div>
         </div>
       </IconContext.Provider>
+      <Switch>
+        <Route path="/AboutUs">
+          <AboutUs />
+        </Route>
+        <Route exaact path="/Services">
+        </Route>
+      </Switch>
     </Router>
   );
 }
