@@ -5,6 +5,7 @@ import { Button } from "./button";
 import { IconContext } from "react-icons/lib";
 import "./Navbar.css";
 import AboutUs from "./pages/AboutUs";
+import Home from './pages/HomePage/Home'
 
 
 function Navbar() {
@@ -47,10 +48,13 @@ function Navbar() {
         </div>
       </IconContext.Provider>
       <Switch>
+      <Route path="/" exact>
+          <Home />
+        </Route>
         <Route path="/AboutUs">
           <AboutUs />
         </Route>
-        <Route exaact path="/Services">
+        <Route path="/Services">
         </Route>
       </Switch>
     </Router>

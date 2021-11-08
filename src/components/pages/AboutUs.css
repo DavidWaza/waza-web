@@ -26,3 +26,16 @@
     margin:auto;
     font-size: 30px;
 }
+.side{
+    display: flex;
+    width: 100%;
+}
+.grey{
+    background-color:red;
+    height: 50vh;
+}
+
+.black{
+    background-color:blue;
+    height: 50vh;
+}
