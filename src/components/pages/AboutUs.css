@@ -5,9 +5,9 @@
     z-index: 2;
 }
 .red-under{
-    width:200px;
+    width:100px;
     height:10px;
-    background-color: #276afb;
+    background-color: #1c2237;
 }
 .aboutUs__hero-wrapper{
     background-image: url(../../images/scott.jpg);
@@ -18,11 +18,9 @@
     height: 50vh;
 }
 .aboutUs__hero-text{
-    text-align: left;
-    justify-content: center;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     margin:auto;
     font-size: 30px;
 }
@@ -30,12 +28,30 @@
     display: flex;
     width: 100%;
 }
-.grey{
-    background-color:red;
+.mission{
+    background-image: url(../../images/mission.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 2;
+    opacity: 1;
     height: 50vh;
+}
+.jumbotext{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    font-weight: 800;
 }
 
 .black{
-    background-color:blue;
+    background-color:#1c2237;
     height: 50vh;
+}
+.vision{
+    background-image: url(../../images/scott.jpg);
+    background-size: cover;
+    background-position: center;
 }
