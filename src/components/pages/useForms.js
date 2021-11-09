@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-function useForms() {
+const useForms = validate => {
   const [values, setValues] = useState({
     username: "",
     email: "",
     password: "",
   });
-
+const [errors, setErrors] = useState({})
   const handleChange = (e) => {
     const { name, value } = e.target
     setValues({
@@ -17,9 +17,10 @@ function useForms() {
   };
   const handleSubmit = e => {
     e.preventDefault();
+    setErrors(validate(values))
 }
 
-  return { handleChange, values, handleSubmit };
+  return { handleChange, values, handleSubmit, errors };
 }
 
 export default useForms;
